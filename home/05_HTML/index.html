@@ -40,5 +40,31 @@
             <input type="submit">
         </div>
     </form>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <h5><b>Отзыв:</b></h5>
+        <div class="outline">
+            <p>Оставьте Ваш отзыв</p>
+            <input type="text" name="name" required> *Имя
+            <br>
+            <input type="email" name="email" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"> *e-mail
+            <br>
+            <textarea name="coment" id="comrnt" cols="25" rows="2" placeholder="форма отправки"></textarea>
+            <br>
+            <input type="submit" value="отпрвить">
+        </div>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
+        <h5><b>Загрузка файла на сервер:</b></h5>
+        <div class="outline">
+            <p>Upload</p>
+            файл 
+            <br>
+            <input type="file" name="f">
+            <br>
+            Срок хранения
+            <br>
+            <input type="number" name="yers">
+        </div>
+    </form>
 </body>
 </html>
