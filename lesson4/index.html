@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <table>
+            <tr>
+                <td width="100">First name</td>
+                <td><input type="text" maxlength="30" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Second name</td>
+                <td><input type="text" maxlength="30" placeholder="Enter your second name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                        placeholder="it should contain @"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="number" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" placeholder="only 10"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <legend>
+                    <td>
+                        <input type="radio" id="gender_male" name="gender" value="male">
+                        <label for="gender_male">Male</label>
+                        <input type="radio" id="gender_female" name="gender" value="female">
+                        <label for="gender_female">Female</label>
+                    </td>
+                </legend>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="date" id="date_of"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="adrdreass" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Area PIN</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <select name="qual[]" id="qualification" multiple size="3">
+                        <option disabled>Select your choise</option>
+                        <option value="value1">Меч</option>
+                        <option value="value2">Герой</option>
+                        <option value="value3">Магия</option>
+                        <option value="value4">И</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Specializaition</td>
+                <td>
+                    <input type="checkbox" value="CS" name="check_box[]">
+                    Computer Science
+                    <br>
+                    <input type="checkbox" value="IT" name="check_box[]">
+                    IT
+                    <br>
+                    <input type="checkbox" value="CA" name="check_box[]">
+                    Computer Architecture
+                    <br>
+                    <input type="checkbox" value="TC" name="check_box[]">
+                    Tele Communication
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
