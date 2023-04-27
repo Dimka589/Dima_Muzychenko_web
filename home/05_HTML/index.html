@@ -18,7 +18,7 @@
         <h5><b>Простая форма поиска с вариантами:</b></h5>
         <div class="outline">
             <p>Строка поиска</p>
-            <input type="text" maxlength="10">
+            <input type="text" maxlength="10" name="search">
             <input type="submit" value="Искать">
             <br>
             <input type="radio" id="our_site" name="site" value="our_site" checked>
@@ -27,7 +27,7 @@
             <label for="google_site">в google</label>
         </div>
     </form>
-    <form action="http://fe.it-academy.by/TestForm.php">
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
         <h5><b>Простая форма авторизации:</b></h5>
         <div class="outline">
             <p>Авторизируйтесь</p>
@@ -40,7 +40,7 @@
             <input type="submit">
         </div>
     </form>
-    <form action="http://fe.it-academy.by/TestForm.php">
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
         <h5><b>Отзыв:</b></h5>
         <div class="outline">
             <p>Оставьте Ваш отзыв</p>
@@ -53,12 +53,11 @@
             <input type="submit" value="отпрвить">
         </div>
     </form>
-    <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
+    <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post">
         <h5><b>Загрузка файла на сервер:</b></h5>
         <div class="outline">
             <p>Upload</p>
-            файл 
-            <br>
+                    <br>
             <input type="file" name="f">
             <br>
             Срок хранения

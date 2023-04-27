@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sedgwick Ave Display';
+    src: url('SedgwickAveDisplay-Regular.eot');
+    src: url('SedgwickAveDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SedgwickAveDisplay-Regular.woff2') format('woff2'),
+        url('SedgwickAveDisplay-Regular.woff') format('woff'),
+        url('SedgwickAveDisplay-Regular.ttf') format('truetype'),
+        url('SedgwickAveDisplay-Regular.svg#SedgwickAveDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
