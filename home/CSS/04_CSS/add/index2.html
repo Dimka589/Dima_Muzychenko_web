@@ -10,12 +10,10 @@
             border-collapse: collapse;
             border: 3px;
             border-style: solid;
-        }
- 
+            counter-reset: c 65;
+        } 
         th{
-            width: 40px; height: 40px;
-            counter-reset: c 64;
-            
+            width: 40px; height: 40px;          
         }
         th::before{
             content: counter(c);
@@ -32,7 +30,7 @@
     </style>
 </head>
 <body>
-    <table class="tabl">
+    <table>
         <tr>
             <th></th>
             <th></th>
